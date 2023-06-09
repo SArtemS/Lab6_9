@@ -126,7 +126,7 @@ def video_finder():
         hasFrame, frame = video.read()
 
         if not hasFrame:
-            cv2.waitKey
+            cv2.waitKey()
             break
 
         resultImg, faceBoxes = highlightFace(faceNet, frame)
